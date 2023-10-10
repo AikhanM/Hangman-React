@@ -1,0 +1,150 @@
+body{
+    background-color: #5e63b6;
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.container {
+    width: 1200px;
+    height: 600px;
+    margin:5% 0;
+    background-color: #fff;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    position: fixed;
+    top:-15%;
+    right: 12%;
+}
+
+.container img{
+    margin:0 40px
+}
+
+.container h2{
+    margin: 0 90px;
+}
+
+.word-container {
+    display: flex;
+    gap:30px;
+    list-style: none;
+}
+
+.hint-container span{
+    font-weight: bold;
+}
+
+.incorrect-container span{
+    color:red;
+}
+
+.letter {
+    width: 50px;
+    height: 5px;
+    border-bottom: 3px solid #000;
+}
+
+.container-right {
+    width: 600px;
+    height: 600px;
+    margin:auto;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+}
+
+.container-right button{
+    width:60px;
+    height:50px;
+    background-color: #5e63b6;
+    color: white;
+    border:none;
+    border-radius: 5px;
+}
+
+.container-right div{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 5px;
+}
+
+.container-right button:hover{
+    opacity: .7;
+}
+
+.container-right button:disabled{
+    opacity: .7;
+}
+
+.gameModal{
+    width: 100wh;
+    height: 100vh;
+}
+
+.loseContainer{
+    position: fixed;
+    top:35%;
+    left:35%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    z-index:1000;
+}
+
+.winContainer {
+    position: fixed;
+    top:35%;
+    left:45%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    z-index:1000;
+}
+
+.loseContainer img {
+    width: 30%;
+    margin-bottom: 10px;
+}
+
+.winContainer button :hover, .loseContainer button :hover {
+    opacity: .7;
+}
+
+.winContainer img {
+    width: 70%;
+    margin-bottom:10px;
+}
+
+.winContainer h1 {
+    margin-left: 20px;
+}
+
+.loseContainer button, .winContainer button{
+    width: 130px;
+    height: 40px;
+    background: #5e63b6;
+    color:#fff;
+    border: none;
+    border-radius: 5px;
+    margin-left: 10px;
+}
+
+.blur{
+    filter:blur(5px)
+}
+
+.passive{
+    display: none;
+}
+
+
+@media only screen and (min-width:1200px){
+    .container{
+        margin:12% 0;
+    }
+}
